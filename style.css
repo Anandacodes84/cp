@@ -124,13 +124,14 @@
 
 .information{
   height: 200%;
-  background-color: skyblue;
+  background-color: lightblue;
 }
 .focus{
+  color: black;
   font-size: 20px;
-  padding-left: 25px;
+  padding-left: 250px;
   padding-top: 20px;
-  padding-right: 25px;
+  padding-right: 250px;
   font: Serif;
   font-weight: bold;
   padding-bottom: 15px;
@@ -160,9 +161,19 @@
   padding-top: 25px;
 }
 
+.blogtwo{
+ margin-left: 250px;
+
+}
 .p1{
   height: 600px;
   width: auto;
+}
+.p2{
+  height: 600px;
+
+  justify-content: center;
+  
 }
 
 .section2{
@@ -184,6 +195,10 @@
   padding:40px 0;
   background-color: skyblue;
   color:#4b4c4d;
+  
+  
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-basic ul {
@@ -228,16 +243,17 @@
   opacity:0.75;
 }
 
-.footer-basic .social > a:hover {
+/* .footer-basic .social > a:hover {
   opacity:0.9;
-}
+} */
 
-.footer-basic  {
+.footer-basic {
   margin-top:15px;
   text-align:center;
   font-size:13px;
   color:#aaa;
   margin-bottom:0;
+
 }
 
 
@@ -254,4 +270,114 @@
   font-size:13px;
   color:#aaa;
   margin-bottom:0;
+}
+
+
+.footer-basic-book {
+
+  position: fixed;
+  bottom: 0;
+  width: 100%; 
+  height: 7.5rem; 
+}
+
+.copyrightbook{
+  margin-bottom: 20px;
+}
+
+.packagechoose{
+  height: 800px;
+  background-color: #915aec
+  ;
+  margin-left: 65px;
+  margin-right: 65px;
+  
+}
+
+.headline{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.sgd{
+  display: flex;
+  margin-top: 25px;
+  gap: 300px;
+  justify-content: center;
+}
+
+.hw{
+  text-align: center;
+  height: 580px;
+  width: 300px;
+  background-color: white;
+  border-radius: 5px;
+  
+}
+
+.marginn{
+  margin-top: 5px;
+  padding-top: 20px;
+}
+
+ol li {
+ 
+    margin: 30px 0;
+ 
+}
+
+.phone{
+  text-align: center;
+  margin-top: 25px;
+}
+
+.footer-basicc{
+  margin-bottom: 0;
+}
+
+.tt{
+  position: fixed;
+}
+
+.Contactform{
+  text-align: center;
+}
+
+.story{
+  width: 100%;
+  height: 350px;
+  background-color: blue;
+}
+
+.h1{
+  text-align: center;
+  padding-top: 25px;
+  color: white;
+}
+
+.storyy{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  line-height: 1.6;
+  color: white;
+}
+
+.blogone{
+  padding-top: 250px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.framephoto{
+  margin-top: 25px;
+  width: 100%;
+  height: 130x;
+  background-color: red;
+}
+
+.p24:hover{
+  opacity: 0.5;
+  
+
 }

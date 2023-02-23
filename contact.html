@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+    </style>
+
+    <!-- .......................................................................................... -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+    </style>
+    <!-- ................................................................................................ -->
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <a href="index.html"
+          ><div class="logo">
+            <img src="./logo.png" /></div
+        ></a>
+      </div>
+
+      <ul class="nav">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="aboutus.html"> About Us</a></li>
+        <li><a href="portfolio.html"> Portfolio</a></li>
+        <li><a href="frame.html"> Frame</a></li>
+        <li><a href="product.html"> Products</a></li>
+        <li><a href="weddingpackage.html"> Wedding Packages</a></li>
+        <li><a href="contact.html"> Contact</a></li>
+      </ul>
+    </div>
+    <div class="Contactform">
+      <h3 class="Contactform">Contact Form</h3>
+
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="pnumber">Phone Number</label>
+          <input
+            type="text"
+            id="pnumber"
+            name="pnumber"
+            placeholder="Your Cell Number.."
+          />
+
+          <label for="country">Wedding Packages</label>
+          <select id="country" name="Wedding Package">
+            <option value="Silver">Silver Package</option>
+            <option value="Gold">Gold Package</option>
+            <option value="Diamond">Diamond Package</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <p>Our Location In Google Maps</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d222.00738238011732!2d85.5532428!3d27.0895713!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1677064696926!5m2!1sen!2snp"
+        width=100%
+        height="850"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!-- ......................................................................................................... -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+    <div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible 
+      <strong>when the user starts to scroll the page</strong>.</div> -->
+
+    <!-- ......................................................................................................... -->
+
+    <footer>
+      <div class="footer-basic tt">
+        <footer>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.html">Home</a></li>
+            <li class="list-inline-item"><a href="weddingpackage.html">Services</a></li>
+            <li class="list-inline-item"><a href="aboutus.html">About</a></li>
+            <li class="list-inline-item"><a href="aboutus.html">Terms</a></li>
+            <li class="list-inline-item"><a href="aboutus.html">Privacy Policy</a></li>
+          </ul>
+          <p class="copyrightbook">Chandeshwori Studio © 2023</p>
+        </footer>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+    </footer>
+  </body>
+</html>
